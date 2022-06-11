@@ -20,11 +20,6 @@ describe("ProductDescription", () => {
     let descriptionDiv = $(".description");
 
     // parse html to test for description div inside ProductDescription Component
-    let description;
-    const productDescriptionNodes = helpers.parseFile(productDescriptionFile);
-    productDescriptionNodes[0].attrs.find(
-      attr => (description = attr.value.match(/description/))
-    );
 
     let element;
     try {
